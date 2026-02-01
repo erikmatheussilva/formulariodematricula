@@ -25,6 +25,111 @@
             Preencha os dados abaixo para matricular seu filho na escola de
             educação infantil Estrelas do Amanhã.
           </p>
+
+          <form action="">
+            <fieldset>
+              <legend>Informações da criança</legend>
+              <div class="input-wrapper">
+                <label for="name">Nome completo</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Nome completo da criança"
+                />
+              </div>
+              <div class="input-wrapper">
+                <label for="birth">Data de nascimento</label>
+                <input type="date" id="birth" name="birth" lang="pt-BR" />
+              </div>
+              <div class="input-wrapper">
+                <label for="gender">Sexo</label>
+                <select name="gender" id="gender">
+                  <option value="male">Masculino</option>
+                  <option value="female">Feminino</option>
+                </select>
+              </div>
+              <div class="input-wrapper">
+                <label for="medical-info">Informações médicas</label>
+                <textarea name="medical-info" id="medical-info"></textarea>
+              </div>
+              <div class="input-wrapper">
+                <label for="birth-certificate">Certidão de nascimento</label>
+                <input
+                  type="file"
+                  placeholder="Clique aqui para selecionar arquivos"
+                />
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Endereço residencial</legend>
+              <div class="input-wrapper">
+                <label for="postal-code">CEP</label>
+                <input type="number" name="postal-code" id="postal-code" />
+              </div>
+              <div class="input-wrapper">
+                <label for="street">Rua</label>
+                <input type="text" name="street" id="street" disabled />
+                <label for="residence-number">Número</label>
+                <input
+                  type="number"
+                  name="residence-number"
+                  id="residence-number"
+                />
+              </div>
+              <div class="input-wrapper">
+                <label for="city">Cidade</label>
+                <input type="text" name="city" id="city" disabled />
+                <label for="state">Estado</label>
+                <input type="text" name="state" id="state" disabled />
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Informações do responsável</legend>
+              <div class="input-wrapper">
+                <label for="parent-name">Nome do responsável</label>
+                <input type="text" name="parent-name" id="parent-name" />
+                <span>Principal responsável legal e contato de emergência</span>
+              </div>
+              <div class="input-wrapper">
+                <label for="parent-phone">Telefone</label>
+                <input type="number" name="parent-phone" id="parent-phone" />
+              </div>
+              <div class="input-wrapper">
+                <label for="parent-email">E-mail</label>
+                <input type="email" name="parent-email" id="parent-email" />
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Opções de matrícula</legend>
+              <div class="input-wrapper">
+                <label for="shift">Selecione o turno de estudo</label>
+                <input type="checkbox" name="shift" id="manha" value="manha" />
+                <label for="manha">Manhã</label>
+                <input type="checkbox" name="shift" id="tarde" value="tarde" />
+                <label for="tarde">Tarde</label>
+              </div>
+              <div class="input-wrapper">
+                <label for="sport">Em qual esporte você gostaria de inscrever seu filho?</label>
+                <input type="checkbox" name="sport" id="futebol" value="futebol" />
+                <label for="futebol">Futebol</label>
+                <input type="checkbox" name="sport" id="basquete" value="basquete" />
+                <label for="tarde">Basquete</label>
+                <input type="checkbox" name="sport" id="natacao" value="natacao" />
+                <label for="natacao">Natação</label>
+                <input type="checkbox" name="sport" id="yoga" value="yoga" />
+                <label for="yoga">Yoga</label>
+                <input type="checkbox" name="sport" id="volley" value="volley" />
+                <label for="volley">Volley</label>
+                <input type="checkbox" name="sport" id="boxing" value="Boxing" />
+                <label for="Boxing">Boxing</label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <input type="checkbox" name="privacy-policy" id="privacy-policy" value="accepted">
+              <label for="privacy-policy">Declaro que li e concordo com os Termos e Condições e com a Política de Privacidade da escola Estrela do Amanhã.</label>
+            </fieldset>
+          </form>
         </div>
       </main>
       <aside>
