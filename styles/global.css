@@ -1,0 +1,53 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Brand */
+  --brand-light: #f67841;
+  --brand-mid: #f3541c;
+  --brand-dark: #e43a12;
+
+  /* Text */
+  --text-primary: #292524;
+  --text-secondary: #57534e;
+  --text-tertiary: #8f8881;
+  --text-highlight: #e43a12;
+
+  /* Surface */
+  --surface-primary: #ffffff;
+  --surface-secondary: #fee7d6;
+  --surface-disabled: #e7e5e4;
+
+  /* Stroke */
+  --stroke-default: #d6d3d1;
+  --stroke-highlight: #f3541c;
+
+  /* Semantic */
+  --semantic-error: #dc2626;
+
+  /* Supporting */
+  --support-orange: #f9a474;
+  --support-yellow: #fedf6f;
+  --support-green: #c7d78d;
+  --support-blue: #b8cedc;
+  --support-violet: #c3b2e7;
+  --support-pink: #f682a5;
+
+  /* Font family */
+  --poppins: "Poppins", sans-serif;
+
+  /* Titles (1rem = 16px) */
+  --heading-1: 700 2rem/120% var(--poppins);
+  --heading-2: 700 1.5rem/120% var(--poppins);
+  --heading-3: 700 1.25rem/120% var(--poppins);
+  --heading-4: 700 1rem/120% var(--poppins);
+  --text: 400 1rem/1.5 var(var(--poppins));
+  --text-sm: 400 0.875rem/1.4 var(var(--poppins));
+}
+
+body {
+  overflow: hidden;
+}
