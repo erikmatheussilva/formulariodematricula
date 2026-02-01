@@ -44,8 +44,10 @@
   --heading-2: 700 1.5rem/120% var(--poppins);
   --heading-3: 700 1.25rem/120% var(--poppins);
   --heading-4: 700 1rem/120% var(--poppins);
-  --text: 400 1rem/1.5 var(var(--poppins));
-  --text-sm: 400 0.875rem/1.4 var(var(--poppins));
+  --text: 400 1rem/1.5 var(--poppins);
+  --text-sm: 400 0.875rem/1.4 var(--poppins);
+  --title: 700 1.5rem/125% var(--poppins);
+  --title-lg: 800 2.5rem/125% var(--poppins);
 }
 
 body {

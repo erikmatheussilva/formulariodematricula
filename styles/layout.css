@@ -11,6 +11,24 @@ main {
   & .main-container {
     max-width: 33rem;
     margin-left: auto;
+    span {
+      font: var(--text);
+      color: var(--text-secondary);
+    }
+    h1 {
+      font: var(--title);
+      margin-bottom: 1rem;
+    }
+    p {
+      font: var(--text);
+      color: var(--text-secondary);
+    }
+  }
+  & .back {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -18,7 +36,21 @@ aside {
   padding: 4rem;
   background-color: var(--surface-secondary);
 
-  & .main-container {
+  & .aside-container {
     max-width: 31rem;
+    h1 {
+      font: var(--title-lg);
+      margin-bottom: .5rem;
+      span {
+        color: var(--text-highlight);
+      }
+    }
+    p {
+      font: var(--text);
+      color: var(--text-secondary);
+    }
+    & > img{
+        margin-top: 2rem;
+    }
   }
 }
