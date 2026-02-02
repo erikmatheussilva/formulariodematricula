@@ -1,4 +1,4 @@
-.app {
+#app {
   grid-template-columns: 51.25% 48.75%;
   height: 100vh;
   overflow: hidden;
@@ -19,10 +19,7 @@ main {
       font: var(--title);
       margin-bottom: 1rem;
     }
-    p {
-      font: var(--text);
-      color: var(--text-secondary);
-    }
+
   }
   & .back {
     display: flex;
