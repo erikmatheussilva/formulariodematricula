@@ -99,7 +99,13 @@
               <div class="flex">
                 <div class="input-wrapper flex-2">
                   <label for="street">Rua</label>
-                  <input type="text" name="street" id="street" value="Rua R. Ayers" disabled />
+                  <input
+                    type="text"
+                    name="street"
+                    id="street"
+                    value="Rua R. Ayers"
+                    disabled
+                  />
                 </div>
                 <div class="input-wrapper flex-1">
                   <label for="residence-number">Número</label>
@@ -125,7 +131,13 @@
                 </div>
                 <div class="input-wrapper flex-1">
                   <label for="state">Estado</label>
-                  <input type="text" name="state" id="state" value="RS" disabled />
+                  <input
+                    type="text"
+                    name="state"
+                    id="state"
+                    value="RS"
+                    disabled
+                  />
                 </div>
               </div>
             </fieldset>
@@ -136,72 +148,136 @@
               <div class="input-wrapper">
                 <label for="parent-name">Nome do responsável</label>
                 <input type="text" name="parent-name" id="parent-name" />
-                <span>Principal responsável legal e contato de emergência</span>
+                <small
+                  >Principal responsável legal e contato de emergência</small
+                >
               </div>
 
               <div class="input-wrapper">
                 <label for="parent-phone">Telefone</label>
-                <input type="number" name="parent-phone" id="parent-phone" />
+                <input
+                  type="text"
+                  name="parent-phone"
+                  id="parent-phone"
+                  placeholder="(55)9 9999-9999"
+                />
               </div>
 
               <div class="input-wrapper">
                 <label for="parent-email">E-mail</label>
-                <input type="email" name="parent-email" id="parent-email" />
+                <input
+                  type="email"
+                  name="parent-email"
+                  id="parent-email"
+                  required
+                />
+                <div class="error">
+                  <img src="assets/icons/alert-circle.svg" alt="erro" />
+                  <span>Insira um e-mail válido</span>
+                </div>
               </div>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="enroll-options">
               <legend>Opções de matrícula</legend>
 
               <div class="input-wrapper">
                 <label for="shift">Selecione o turno de estudo</label>
-                <input type="checkbox" name="shift" id="manha" value="manha" />
-                <label for="manha">Manhã</label>
-                <input type="checkbox" name="shift" id="tarde" value="tarde" />
-                <label for="tarde">Tarde</label>
+                <div class="radio-wrapper">
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input type="radio" name="shift" id="manha" value="manha" />
+                    <img src="assets/icons/sun-cloud-02.svg" alt="" />
+                    <label for="manha">Manhã</label>
+                  </div>
+
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input type="radio" name="shift" id="tarde" value="tarde" />
+                    <img src="assets/icons/sun-02.svg" alt="" />
+                    <label for="tarde">Tarde</label>
+                  </div>
+                </div>
               </div>
 
               <div class="input-wrapper">
                 <label for="sport"
                   >Em qual esporte você gostaria de inscrever seu filho?</label
                 >
-                <input
-                  type="checkbox"
-                  name="sport"
-                  id="futebol"
-                  value="futebol"
-                />
-                <label for="futebol">Futebol</label>
-                <input
-                  type="checkbox"
-                  name="sport"
-                  id="basquete"
-                  value="basquete"
-                />
-                <label for="tarde">Basquete</label>
-                <input
-                  type="checkbox"
-                  name="sport"
-                  id="natacao"
-                  value="natacao"
-                />
-                <label for="natacao">Natação</label>
-                <input type="checkbox" name="sport" id="yoga" value="yoga" />
-                <label for="yoga">Yoga</label>
-                <input
-                  type="checkbox"
-                  name="sport"
-                  id="volley"
-                  value="volley"
-                />
-                <label for="volley">Volley</label>
-                <input
-                  type="checkbox"
-                  name="sport"
-                  id="boxing"
-                  value="Boxing"
-                />
-                <label for="Boxing">Boxing</label>
+                <div class="checkbox-wrapper">
+                  <div class="checkbox-inner">
+                    <div class="checkbox-image"></div>
+                    <input
+                      type="checkbox"
+                      name="sport"
+                      id="football"
+                      value="football"
+                    />
+                    <img src="assets/icons/football.svg" alt="" />
+                    <label for="football">Futebol</label>
+                  </div>
+
+                  <div class="checkbox-inner">
+                    <div class="checkbox-image"></div>
+                    <input
+                      type="checkbox"
+                      name="sport"
+                      id="basketball"
+                      value="basketball"
+                    />
+                    <img src="assets/icons/basketball-02.svg" alt="" />
+                    <label for="basketball">Basquete</label>
+                  </div>
+
+                  <div class="checkbox-inner">
+                    <div class="checkbox-image"></div>
+                    <input
+                      type="checkbox"
+                      name="sport"
+                      id="swimming"
+                      value="swimming"
+                    />
+                    <img src="assets/icons/swimming.svg" alt="" />
+                    <label for="swimming">Natação</label>
+                  </div>
+
+                  <div class="checkbox-inner">
+                    <div class="checkbox-image"></div>
+                    <input
+                      type="checkbox"
+                      name="sport"
+                      id="yoga"
+                      value="yoga"
+                    />
+                    <img src="assets/icons/yoga-02.svg" alt="" />
+                    <label for="yoga">Yoga</label>
+                  </div>
+
+                  <div class="checkbox-inner">
+                    <div class="checkbox-image"></div>
+                    <input
+                      type="checkbox"
+                      name="sport"
+                      id="volley"
+                      value="volley"
+                    />
+                    <img src="assets/icons/volleyball.svg" alt="" />
+                    <label for="volley">Volley</label>
+                  </div>
+                  
+                  <div class="checkbox-inner">
+                    <div class="checkbox-image"></div>
+                    <input
+                      type="checkbox"
+                      name="sport"
+                      id="boxing"
+                      value="boxing"
+                    />
+                    <img src="assets/icons/boxing-glove-01.svg" alt="" />
+                    <label for="boxing">Boxing</label>
+                  </div>
+                
+                </div>
               </div>
             </fieldset>
             <fieldset>
