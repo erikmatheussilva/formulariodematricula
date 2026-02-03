@@ -87,47 +87,72 @@
                 </div>
               </div>
             </fieldset>
+
             <fieldset class="address-info">
               <legend>Endereço residencial</legend>
+
               <div class="input-wrapper">
                 <label for="postal-code">CEP</label>
                 <input type="number" name="postal-code" id="postal-code" />
               </div>
-              <div class="input-wrapper">
-                <label for="street">Rua</label>
-                <input type="text" name="street" id="street" disabled />
-                <label for="residence-number">Número</label>
-                <input
-                  type="number"
-                  name="residence-number"
-                  id="residence-number"
-                />
+
+              <div class="flex">
+                <div class="input-wrapper flex-2">
+                  <label for="street">Rua</label>
+                  <input type="text" name="street" id="street" value="Rua R. Ayers" disabled />
+                </div>
+                <div class="input-wrapper flex-1">
+                  <label for="residence-number">Número</label>
+                  <input
+                    type="number"
+                    name="residence-number"
+                    id="residence-number"
+                    value="77"
+                  />
+                </div>
               </div>
-              <div class="input-wrapper">
-                <label for="city">Cidade</label>
-                <input type="text" name="city" id="city" disabled />
-                <label for="state">Estado</label>
-                <input type="text" name="state" id="state" disabled />
+
+              <div class="flex">
+                <div class="input-wrapper flex-2">
+                  <label for="city">Cidade</label>
+                  <input
+                    type="text"
+                    name="city"
+                    id="city"
+                    disabled
+                    value="Esteio"
+                  />
+                </div>
+                <div class="input-wrapper flex-1">
+                  <label for="state">Estado</label>
+                  <input type="text" name="state" id="state" value="RS" disabled />
+                </div>
               </div>
             </fieldset>
+
             <fieldset>
               <legend>Informações do responsável</legend>
+
               <div class="input-wrapper">
                 <label for="parent-name">Nome do responsável</label>
                 <input type="text" name="parent-name" id="parent-name" />
                 <span>Principal responsável legal e contato de emergência</span>
               </div>
+
               <div class="input-wrapper">
                 <label for="parent-phone">Telefone</label>
                 <input type="number" name="parent-phone" id="parent-phone" />
               </div>
+
               <div class="input-wrapper">
                 <label for="parent-email">E-mail</label>
                 <input type="email" name="parent-email" id="parent-email" />
               </div>
             </fieldset>
+
             <fieldset>
               <legend>Opções de matrícula</legend>
+
               <div class="input-wrapper">
                 <label for="shift">Selecione o turno de estudo</label>
                 <input type="checkbox" name="shift" id="manha" value="manha" />
@@ -135,6 +160,7 @@
                 <input type="checkbox" name="shift" id="tarde" value="tarde" />
                 <label for="tarde">Tarde</label>
               </div>
+
               <div class="input-wrapper">
                 <label for="sport"
                   >Em qual esporte você gostaria de inscrever seu filho?</label
