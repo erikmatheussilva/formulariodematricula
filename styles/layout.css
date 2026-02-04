@@ -19,13 +19,44 @@ main {
       font: var(--title);
       margin-bottom: 1rem;
     }
-
   }
   & .back {
     display: flex;
     align-items: center;
     gap: 0.5rem;
     margin-bottom: 1.5rem;
+  }
+
+  & .buttons-wrapper {
+    display: flex;
+    gap: 1rem;
+    place-content: end;
+    margin-bottom: 3rem;
+    & button {
+      all: unset;
+      font-weight: 500;
+      padding: 0.75rem 1.5rem;
+      cursor: pointer;
+    }
+
+    & .save {
+      color: var(--text-highlight);
+      border: 1px solid var(--stroke-highlight);
+      border-radius: 0.5rem;
+      &:hover,
+      &:focus {
+        outline: 0.25rem solid var(--surface-secondary);
+      }
+    }
+    & .enroll {
+      color: #fff;
+      border-radius: 0.5rem;
+      background-color: var(--brand-dark);
+      &:hover,
+      &:focus {
+        background-color: var(--brand-mid);
+      }
+    }
   }
 }
 
@@ -37,7 +68,7 @@ aside {
     max-width: 31rem;
     h1 {
       font: var(--title-lg);
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
       span {
         color: var(--text-highlight);
       }
@@ -46,8 +77,8 @@ aside {
       font: var(--text);
       color: var(--text-secondary);
     }
-    & > img{
-        margin-top: 2rem;
+    & > img {
+      margin-top: 2rem;
     }
   }
 }

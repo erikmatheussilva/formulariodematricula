@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
+    <script src="fileUpload.js" defer></script>
+    <script src="cep.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta charset="UTF-8" />
@@ -59,6 +61,7 @@
                 <div class="dropzone">
                   <input
                     type="file"
+                    id="fileInput"
                     placeholder="Clique aqui para selecionar arquivos"
                   />
                   <svg
@@ -85,6 +88,7 @@
                   </svg>
                   <p>Clique aqui para selecionar arquivos</p>
                 </div>
+                <p id="fileInfo">No file selected</p>
               </div>
             </fieldset>
 
@@ -92,18 +96,17 @@
               <legend>Endereço residencial</legend>
 
               <div class="input-wrapper">
-                <label for="postal-code">CEP</label>
-                <input type="number" name="postal-code" id="postal-code" />
+                <label for="cep">CEP</label>
+                <input type="text" name="cep" id="cep" value="" onblur="pesquisacep(this.value)" />
               </div>
 
               <div class="flex">
                 <div class="input-wrapper flex-2">
-                  <label for="street">Rua</label>
+                  <label for="rua">Rua</label>
                   <input
                     type="text"
-                    name="street"
-                    id="street"
-                    value="Rua R. Ayers"
+                    name="rua"
+                    id="rua"
                     disabled
                   />
                 </div>
@@ -120,22 +123,20 @@
 
               <div class="flex">
                 <div class="input-wrapper flex-2">
-                  <label for="city">Cidade</label>
+                  <label for="cidade">Cidade</label>
                   <input
                     type="text"
-                    name="city"
-                    id="city"
+                    name="cidade"
+                    id="cidade"
                     disabled
-                    value="Esteio"
                   />
                 </div>
                 <div class="input-wrapper flex-1">
-                  <label for="state">Estado</label>
+                  <label for="uf">Estado</label>
                   <input
                     type="text"
-                    name="state"
-                    id="state"
-                    value="RS"
+                    name="uf"
+                    id="uf"
                     disabled
                   />
                 </div>
@@ -289,7 +290,10 @@
                 Amanhã.</label
               >
             </div>
-            div
+            <div class="buttons-wrapper">
+              <button class="save">Salvar respostas</button>
+              <button class="enroll">Fazer matrícula</button>
+            </div>
           </form>
         </div>
       </main>

@@ -11,6 +11,7 @@
     color: #a8a29e;
     font: 1rem/150% var(--poppins);
   }
+  
   & img {
     height: 3rem;
     width: 3rem;
@@ -33,4 +34,9 @@
       stroke: var(--stroke-highlight);
     }
   }
+
 }
+
+#fileInfo{
+    margin-top: .5rem;
+  }
