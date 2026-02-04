@@ -1,56 +1,40 @@
-/* vai funcionar apenas quando houver label seguido de .checkbox-wrapper */
-label + .checkbox-wrapper {
-  margin-top: 1rem;
-}
-
 .checkbox-wrapper {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
-}
-
-.checkbox-inner {
-  border: 1px solid var(--stroke-default);
-  border-radius: 0.5rem;
-  display: grid;
-  justify-items: center;
-  gap: 0.5rem;
-  padding: 2rem 0.5rem 0.5rem;
   position: relative;
-  & input,
-  & input:focus,
-  & input:hover {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+  & [type="checkbox"] {
     all: unset;
-    position: absolute;
     inset: 0;
+    position: absolute;
   }
 
+  & strong {
+    font-weight: 500;
+    color: var(--text-highlight);
+    text-decoration: underline;
+  }
   .checkbox-image {
-    background-image: url(../../assets/icons/circle.svg);
-    position: absolute;
-    top: 0.5rem;
-    left: 0.5rem;
-    width: 1.5rem;
+    background-image: url(../../assets/icons/squared-checkbox.svg);
+    background-repeat: no-repeat;
+    flex: 0 0 1.5rem;
     height: 1.5rem;
   }
 
   &:hover,
   &:focus-within {
-    border: 1px solid var(--stroke-highlight);
-
     .checkbox-image {
-      background-image: url(../../assets/icons/circle-1.svg);
-      position: absolute;
-      top: 0.5rem;
-      left: 0.5rem;
+      background-image: url(../../assets/icons/squared-checkbox-hover.svg);
+      background-repeat: no-repeat;
       width: 1.5rem;
       height: 1.5rem;
     }
   }
-  &:has(:checked){
-    .checkbox-image{
-      background-image: url(../../assets/icons/checkmark-circle-01.svg);
+  &:has(:checked) {
+    .checkbox-image {
+      background-image: url(../../assets/icons/squared-checkbox-checked.svg);
+      background-repeat: no-repeat;
     }
   }
-
 }
