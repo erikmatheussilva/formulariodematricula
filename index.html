@@ -1,8 +1,9 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
-    <script src="fileUpload.js" defer></script>
-    <script src="cep.js"></script>
+    <script src="js/fileUpload.js" defer></script>
+    <script src="js/cep.js"></script>
+    <script src="js/validatePhone.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta charset="UTF-8" />
@@ -97,18 +98,19 @@
 
               <div class="input-wrapper">
                 <label for="cep">CEP</label>
-                <input type="text" name="cep" id="cep" value="" onblur="pesquisacep(this.value)" />
+                <input
+                  type="text"
+                  name="cep"
+                  id="cep"
+                  value=""
+                  onblur="pesquisacep(this.value)"
+                />
               </div>
 
               <div class="flex">
                 <div class="input-wrapper flex-2">
                   <label for="rua">Rua</label>
-                  <input
-                    type="text"
-                    name="rua"
-                    id="rua"
-                    disabled
-                  />
+                  <input type="text" name="rua" id="rua" disabled />
                 </div>
                 <div class="input-wrapper flex-1">
                   <label for="residence-number">Número</label>
@@ -116,7 +118,6 @@
                     type="number"
                     name="residence-number"
                     id="residence-number"
-                    value="77"
                   />
                 </div>
               </div>
@@ -124,21 +125,11 @@
               <div class="flex">
                 <div class="input-wrapper flex-2">
                   <label for="cidade">Cidade</label>
-                  <input
-                    type="text"
-                    name="cidade"
-                    id="cidade"
-                    disabled
-                  />
+                  <input type="text" name="cidade" id="cidade" disabled />
                 </div>
                 <div class="input-wrapper flex-1">
                   <label for="uf">Estado</label>
-                  <input
-                    type="text"
-                    name="uf"
-                    id="uf"
-                    disabled
-                  />
+                  <input type="text" name="uf" id="uf" disabled />
                 </div>
               </div>
             </fieldset>
@@ -155,13 +146,17 @@
               </div>
 
               <div class="input-wrapper">
-                <label for="parent-phone">Telefone</label>
+                <label for="phone">Telefone</label>
                 <input
-                  type="text"
-                  name="parent-phone"
-                  id="parent-phone"
-                  placeholder="(55)9 9999-9999"
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  oninput="validatePhoneNumber(this)"
                 />
+                <div class="error-js" id="phone-error" hidden>
+                  <img src="assets/icons/alert-circle.svg" alt="erro" />
+                  <span>Telefone inválido</span>
+                </div>
               </div>
 
               <div class="input-wrapper">
