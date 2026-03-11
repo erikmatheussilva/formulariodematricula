@@ -7,11 +7,12 @@
   padding: 1.75rem 1rem;
   text-align: center;
   position: relative;
+  width: 100%;
   & p {
     color: #a8a29e;
     font: 1rem/150% var(--poppins);
   }
-  
+
   & img {
     height: 3rem;
     width: 3rem;
@@ -34,9 +35,8 @@
       stroke: var(--stroke-highlight);
     }
   }
-
 }
 
-#fileInfo{
-    margin-top: .5rem;
-  }
+#fileInfo {
+  margin-top: 0.5rem;
+}

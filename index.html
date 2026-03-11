@@ -18,7 +18,7 @@
   <body>
     <div id="app" class="grid">
       <main>
-        <div class="main-container">
+        <div class="main-container container">
           <div class="back">
             <img src="assets/icons/arrow-left-02.svg" alt="Return" />
             <span>Voltar</span>
@@ -204,7 +204,7 @@
                   <div class="radio-inner">
                     <div class="radio-image"></div>
                     <input
-                      type="radio"
+                      type="checkbox"
                       name="sport"
                       id="football"
                       value="football"
@@ -216,7 +216,7 @@
                   <div class="radio-inner">
                     <div class="radio-image"></div>
                     <input
-                      type="radio"
+                      type="checkbox"
                       name="sport"
                       id="basketball"
                       value="basketball"
@@ -228,7 +228,7 @@
                   <div class="radio-inner">
                     <div class="radio-image"></div>
                     <input
-                      type="radio"
+                      type="checkbox"
                       name="sport"
                       id="swimming"
                       value="swimming"
@@ -239,7 +239,7 @@
 
                   <div class="radio-inner">
                     <div class="radio-image"></div>
-                    <input type="radio" name="sport" id="yoga" value="yoga" />
+                    <input type="checkbox" name="sport" id="yoga" value="yoga" />
                     <img src="assets/icons/yoga-02.svg" alt="" />
                     <label for="yoga">Yoga</label>
                   </div>
@@ -247,7 +247,7 @@
                   <div class="radio-inner">
                     <div class="radio-image"></div>
                     <input
-                      type="radio"
+                      type="checkbox"
                       name="sport"
                       id="volley"
                       value="volley"
@@ -259,7 +259,7 @@
                   <div class="radio-inner">
                     <div class="radio-image"></div>
                     <input
-                      type="radio"
+                      type="checkbox"
                       name="sport"
                       id="boxing"
                       value="boxing"
@@ -296,8 +296,10 @@
         <div class="aside-container">
           <header>
             <img src="assets/images/logo.svg" alt="" />
-            <h1>Porque cada momento de <span> aprendizado </span>conta</h1>
-            <p>
+            <h1 class="desktop-only">
+              Porque cada momento de <span> aprendizado </span>conta
+            </h1>
+            <p class="desktop-only">
               Inscreva seu filho em nossa escola e veja-o florescer em um
               ambiente acolhedor, seguro e estimulante.
             </p>

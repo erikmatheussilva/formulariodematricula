@@ -103,7 +103,6 @@ input {
   }
 }
 
-
 .error-js {
   display: flex;
   align-items: center;
@@ -122,4 +121,3 @@ input {
 .error-js[hidden] {
   display: none;
 }
-

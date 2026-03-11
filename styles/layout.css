@@ -1,16 +1,12 @@
 #app {
-  grid-template-columns: 51.25% 48.75%;
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
 }
 
 main {
   overflow: auto;
-  padding: 4rem;
+  padding: 1.5rem;
 
   & .main-container {
-    max-width: 33rem;
-    margin-left: auto;
     span {
       font: var(--text);
       color: var(--text-secondary);
@@ -28,14 +24,13 @@ main {
   }
 
   & .buttons-wrapper {
-    display: flex;
+    display: grid;
     gap: 1rem;
-    place-content: end;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
     & button {
       all: unset;
-      font-weight: 500;
-      padding: 0.75rem 1.5rem;
+      font-weight: 400;
+      padding: 0.75rem 1rem;
       cursor: pointer;
     }
 
@@ -43,6 +38,7 @@ main {
       color: var(--text-highlight);
       border: 1px solid var(--stroke-highlight);
       border-radius: 0.5rem;
+      text-align: center;
       &:hover,
       &:focus {
         outline: 0.25rem solid var(--surface-secondary);
@@ -52,6 +48,8 @@ main {
       color: #fff;
       border-radius: 0.5rem;
       background-color: var(--brand-dark);
+      text-align: center;
+
       &:hover,
       &:focus {
         background-color: var(--brand-mid);
@@ -61,11 +59,11 @@ main {
 }
 
 aside {
-  padding: 4rem;
+  order: -1;
+  padding: 1.5rem;
   background-color: var(--surface-secondary);
-
   & .aside-container {
-    max-width: 31rem;
+    max-width: 24.56rem;
     h1 {
       font: var(--title-lg);
       margin-bottom: 0.5rem;
@@ -77,8 +75,101 @@ aside {
       font: var(--text);
       color: var(--text-secondary);
     }
-    & > img {
-      margin-top: 2rem;
+    & header img {
+      max-width: 100%;
+      display: block;
+      margin: 1rem auto 0;
+    }
+  }
+}
+
+@media (width >= 80em) {
+  #app {
+    grid-template-columns: 51.25% 48.75%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  main {
+    overflow: auto;
+    padding: 4rem;
+
+    & .main-container {
+      max-width: 33rem;
+      margin-left: auto;
+      span {
+        font: var(--text);
+        color: var(--text-secondary);
+      }
+      h1 {
+        font: var(--title);
+        margin-bottom: 1rem;
+      }
+    }
+    & .back {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    & .buttons-wrapper {
+      display: flex;
+      gap: 1rem;
+      place-content: end;
+      margin-bottom: 3rem;
+      & button {
+        all: unset;
+        font-weight: 500;
+        padding: 0.75rem 1.5rem;
+        cursor: pointer;
+      }
+
+      & .save {
+        color: var(--text-highlight);
+        border: 1px solid var(--stroke-highlight);
+        border-radius: 0.5rem;
+        &:hover,
+        &:focus {
+          outline: 0.25rem solid var(--surface-secondary);
+        }
+      }
+      & .enroll {
+        color: #fff;
+        border-radius: 0.5rem;
+        background-color: var(--brand-dark);
+        &:hover,
+        &:focus {
+          background-color: var(--brand-mid);
+        }
+      }
+    }
+  }
+
+  aside {
+    order: 0;
+    padding: 4rem;
+    background-color: var(--surface-secondary);
+
+    & .aside-container {
+      max-width: 31rem;
+      h1 {
+        font: var(--title-lg);
+        margin-bottom: 0.5rem;
+        span {
+          color: var(--text-highlight);
+        }
+      }
+      p {
+        font: var(--text);
+        color: var(--text-secondary);
+      }
+      & header img {
+        max-width: 100%;
+        margin-top: 2rem;
+        display: block;
+        margin-left: 0;
+      }
     }
   }
 }
