@@ -2,14 +2,14 @@
 
 ## Description
 
-This is a study project implementing an enrollment form for "Estrelas do Amanhã", a Brazilian private kindergarten. The form is designed to collect comprehensive information for new student registrations, including child details, residential address, guardian information, and enrollment preferences.
+This is a study project implementing an enrollment form for "Estrelas do Amanhã", a private kindergarten. The form is designed to collect comprehensive information for new student registrations, including child details, residential address, guardian information, and enrollment preferences.
 
-The project demonstrates modern web development practices with a focus on user experience, form validation, and integration with Brazilian-specific services.
+The project demonstrates modern web development practices with a focus on user experience, form validation, and integration External API.
 
 ### Key Functionalities
 
 - **CEP Auto-lookup**: Integrates with ViaCEP API to automatically populate address fields
-- **Phone Validation**: Advanced validation for Brazilian phone numbers including area code verification
+- **Phone Validation**: Advanced validation for phone numbers including area code verification
 - **File Upload**: Drag-and-drop interface for birth certificate submission
 - **Form Validation**: Real-time validation with visual feedback
 - **Responsive Design**: Mobile-first approach with flexible layouts
