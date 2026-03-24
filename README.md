@@ -66,5 +66,4 @@ formulariodematricula/
 
 ## License
 
-This is a study project for educational purposes only.</content>
-<parameter name="filePath">e:\Projetos de estudo\formulariodematricula\README.md
+This is a study project for educational purposes only.
